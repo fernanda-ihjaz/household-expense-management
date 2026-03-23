@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/1 - Api/">
+    <Project Path="HouseholdExpenseManagement.Api/HouseholdExpenseManagement.Api.csproj" />
+  </Folder>
+  <Folder Name="/src/2 - Application/">
+    <Project Path="HouseholdExpenseManagement.Application/HouseholdExpenseManagement.Application.csproj" />
+  </Folder>
+  <Folder Name="/src/3 - Domain/">
+    <Project Path="HouseholdExpenseManagement.Domain/HouseholdExpenseManagement.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/4 - Infrastructure/">
+    <Project Path="HouseholdExpenseManagement.Infrastructure/HouseholdExpenseManagement.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+  <Folder Name="/tests/1 - Api/">
+    <Project Path="HouseholdExpenseManagement.Api.Tests/HouseholdExpenseManagement.Api.Tests.csproj" Id="66a774d2-e401-4952-a6c4-b479fe469bcc" />
+  </Folder>
+</Solution>
