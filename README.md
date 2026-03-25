@@ -2,7 +2,7 @@
 
 Sistema para gerenciamento de gastos domésticos. Permite registrar pessoas, categorias e transações financeiras, além de visualizar relatórios de receitas, despesas e saldo por pessoa e por categoria.
 
-O projeto é dividido em duas partes, cada uma com um README próprio documentando as decisões de projeto, tecnologias utilizadas e instruções detalhadas para execução:
+O projeto é dividido em duas partes, cada uma com um README próprio documentando as decisões de projeto, tecnologias utilizadas, pré-requisitos e instruções detalhadas para execução:
 
 ```
 /
@@ -12,51 +12,6 @@ O projeto é dividido em duas partes, cada uma com um README próprio documentan
 
 - [`backend/README.md`](./backend/README.md) — documentação da API, arquitetura, padrões adotados e como rodar o backend
 - [`frontend/README.md`](./frontend/README.md) — documentação da interface, estrutura de componentes, decisões de projeto e como rodar o frontend
-
----
-
-## Como Executar
-
-Para rodar o sistema completo, você precisa iniciar o backend e o frontend separadamente.
-
-### 1. Backend
-
-```bash
-cd backend
-
-# Restaure as dependências
-dotnet restore
-
-# Aplique as migrations
-cd HouseholdExpenseManagement.Infrastructure
-dotnet ef database update -s "..\HouseholdExpenseManagement.Api"
-
-# Execute a API
-cd ..
-dotnet run --project HouseholdExpenseManagement.Api
-```
-
-A API estará disponível em `https://localhost:{porta}`.
-
-### 2. Frontend
-
-```bash
-cd frontend
-
-# Instale as dependências
-npm install
-
-# Configure a URL da API
-cp .env.example .env.local
-# Edite .env.local com o endereço da API
-
-# Inicie a interface
-npm run dev
-```
-
-A interface estará disponível em `http://localhost:{porta}`.
-
----
 
 ## Pré-requisitos
 
